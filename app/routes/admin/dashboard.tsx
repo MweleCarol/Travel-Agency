@@ -40,7 +40,7 @@ const dashboard = () => {
            {allTrips.slice(0, 4).map(({id, name, imageUrls, itinerary, tags, estimatedPrice})=>(
              <TripCard
               key={id}
-              id={id.toString}
+              id={id.toString()}
               name={name}
               imageUrl={imageUrls[0]}
               location={itinerary?.[0]?.location ?? ''}
